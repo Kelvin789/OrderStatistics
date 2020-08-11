@@ -1,0 +1,50 @@
+﻿@model OrderStatistics.Models.Orders
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WeekID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeekID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdersPlaced)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdersPlaced)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdersAuthorised)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrdersAuthorised)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSales)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalSales)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

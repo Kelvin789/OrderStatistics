@@ -1,0 +1,52 @@
+﻿@model IEnumerable<OrderStatistics.Models.WebsiteStat>
+
+@{
+    ViewBag.Title = "Website Statistics";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <td>
+            @Html.DisplayNameFor(model => model.WeekID)
+        </td>
+        <th>
+            @Html.DisplayNameFor(model => model.PageLoadTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UniqueLogins)
+        </th>
+        <th></th>
+    </tr>
+    
+    @if (Model == null)
+    {
+        <span>no items found</span>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WeekID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PageLoadTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UniqueLogins)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+    }
+</table>

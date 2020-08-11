@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Order Statistics</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Orders", "Index", "Orders")</h2>
+        <p>
+            Information about orders.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Website stats", "Index", "WebsiteStats")</h2>
+        <p>
+            Information about website statistics.
+        </p>
+    </div>
+</div>
