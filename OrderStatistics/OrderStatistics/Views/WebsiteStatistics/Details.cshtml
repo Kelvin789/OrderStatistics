@@ -1,0 +1,46 @@
+﻿@model OrderStatistics.Models.Website
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.Id)
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeekId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeekId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PageLoadTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PageLoadTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UniqueLogins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UniqueLogins)
+        </dd>
+
+        <dd>
+            @Html.ActionLink("Edit", "Edit", "WebsiteStatistics", new { Model.Id }, new { @class = "navigate-links" })
+        </dd>
+    </dl>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index", "WebsiteStatistics", null, new { @class = "navigate-links" })
+</div>

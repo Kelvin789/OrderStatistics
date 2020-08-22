@@ -47,3 +47,7 @@ a.my-class:link {
 a.my-class:visited {
     color: #61892f
 }
+
+a.navigate-links {
+    color: green
+}

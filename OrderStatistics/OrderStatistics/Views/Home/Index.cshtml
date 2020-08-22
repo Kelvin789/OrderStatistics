@@ -8,15 +8,21 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>@Html.ActionLink("Orders", "Index", "Orders")</h2>
+        <h2>@Html.ActionLink("Orders", "Index", "OrderStatistics", null, new { @class = "navigate-links" })</h2>
         <p>
             Information about orders.
         </p>
     </div>
     <div class="col-md-4">
-        <h2>@Html.ActionLink("Website stats", "Index", "WebsiteStats")</h2>
+        <h2>@Html.ActionLink("Website", "Index", "WebsiteStatistics", null, new { @class = "navigate-links" })</h2>
         <p>
             Information about website statistics.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Refunded", "Index", "RefundedStatistics", null, new { @class = "navigate-links" })</h2>
+        <p>
+            Information about refund statistics.
         </p>
     </div>
 </div>

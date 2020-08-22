@@ -121,13 +121,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\OrdersController.cs" />
-    <Compile Include="Controllers\WebsiteStatsController.cs" />
+    <Compile Include="Controllers\OrderStatisticsController.cs" />
+    <Compile Include="Controllers\RefundedStatisticsController.cs" />
+    <Compile Include="Controllers\WebsiteStatisticsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Orders.cs" />
-    <Compile Include="Models\WebsiteStat.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Refunded.cs" />
+    <Compile Include="Models\Website.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -166,16 +168,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Orders\Create.cshtml" />
-    <Content Include="Views\Orders\Delete.cshtml" />
-    <Content Include="Views\Orders\Details.cshtml" />
-    <Content Include="Views\Orders\Edit.cshtml" />
-    <Content Include="Views\Orders\Index.cshtml" />
-    <Content Include="Views\WebsiteStats\Create.cshtml" />
-    <Content Include="Views\WebsiteStats\Delete.cshtml" />
-    <Content Include="Views\WebsiteStats\Details.cshtml" />
-    <Content Include="Views\WebsiteStats\Edit.cshtml" />
-    <Content Include="Views\WebsiteStats\Index.cshtml" />
+    <Content Include="Views\OrderStatistics\Create.cshtml" />
+    <Content Include="Views\OrderStatistics\Delete.cshtml" />
+    <Content Include="Views\OrderStatistics\Details.cshtml" />
+    <Content Include="Views\OrderStatistics\Edit.cshtml" />
+    <Content Include="Views\OrderStatistics\Index.cshtml" />
+    <Content Include="Views\WebsiteStatistics\Create.cshtml" />
+    <Content Include="Views\WebsiteStatistics\Delete.cshtml" />
+    <Content Include="Views\WebsiteStatistics\Details.cshtml" />
+    <Content Include="Views\WebsiteStatistics\Edit.cshtml" />
+    <Content Include="Views\WebsiteStatistics\Index.cshtml" />
+    <Content Include="Views\RefundedStatistics\Index.cshtml" />
+    <Content Include="Views\RefundedStatistics\Delete.cshtml" />
+    <Content Include="Views\RefundedStatistics\Create.cshtml" />
+    <Content Include="Views\RefundedStatistics\Details.cshtml" />
+    <Content Include="Views\RefundedStatistics\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

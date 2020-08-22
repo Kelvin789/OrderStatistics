@@ -1,0 +1,55 @@
+﻿@model OrderStatistics.Models.Refunded
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.Id)
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeekId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeekId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalDamagedUnit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalDamagedUnit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalCost)
+        </dd>
+
+        <dd>
+            @Html.ActionLink("Edit", "Edit", "RefundedStatistics", new { Model.Id }, new { @class = "navigate-links" })
+        </dd>
+    </dl>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index", "RefundedStatistics", null, new { @class = "navigate-links" })
+</div>
+
